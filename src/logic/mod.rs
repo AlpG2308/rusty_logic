@@ -1,5 +1,4 @@
 pub mod gate;
-pub mod circuit;
-
-pub use circuit::LogicCircuit;
-pub use gate::GateType;
+pub mod circuits;
+pub use gate::Gate;
+pub use circuits::Network;

@@ -7,6 +7,7 @@ pub enum Gate {
     Not,
     Nand,
     Nor,
+    Input,
 }
 
 //don't point to vector heap location but to elements e.g. not &Vec<bool>
@@ -21,7 +22,7 @@ impl Gate {
             Gate::Not => !inputs[0],
             Gate::Nand => !inputs.iter().all(|&x| x),
             Gate::Nor => !inputs.iter().any(|&x| x),
-            Gate::Input => inputs.get(0).clone().unwrap_or(false),
+            Gate::Input => inputs.get(0).cloned().unwrap_or(false),
         }
     }              
 }
