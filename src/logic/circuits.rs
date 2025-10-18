@@ -67,7 +67,7 @@ impl Network {
 impl Model for Network {
     //get all current outputs
     // update all nodes based on gate type and input
-    fn step(&mut self, dt:f64){
+    fn step(&mut self, _dt:f64){
         let current_states = self.Nodes.iter().map(|x| x.output).collect::<Vec<bool>>();
         for node in self.Nodes.iter_mut(){
             if let Gate::Input = node.gate{
@@ -82,4 +82,5 @@ impl Model for Network {
             println!("Node {} (Gate: {:?}) Output: {}",node.name,node.gate,node.output);
         }
     }
-}   
+}
+  

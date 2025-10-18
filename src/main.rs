@@ -14,6 +14,7 @@ fn main() {
     println!("Commands: add_gate, connect, set_input, simulate, show, exit\n");
 
     loop {
+        println!("Commands: add_gate <name ,type>, connect <src, dest>, set_input<gate ,true/false>, simulate <steps,optional<name>>, list (show Gates and connections by id), exit\n");
         print!("> ");
         io::stdout().flush().unwrap();
         let mut input = String::new();
@@ -54,11 +55,12 @@ fn main() {
                 sim.run();
             }
 
+
             "list" => circuit.show_nodes(),
 
             "exit" => break,
 
             _ => println!("Unknown command"),
-        }
+            }
     }
 }

@@ -1,3 +1,5 @@
+use std::env::Args;
+
 use crate::model::Model;
 
 pub struct Simulation<T:Model>{
