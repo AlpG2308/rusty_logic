@@ -17,14 +17,14 @@ developed
 + Different Node Types
     + <span style="color:green"> Logic/Discrete Nodes </span> (on/off Nodes with Logic operation)
     + <span style="color:red"> Continous/dynamic Nodes </span> (Nodes with Bias and Decay -> Integration of environmental signals)
-            + Biased nodes (Bias can change based on Environmental signals)
-            + implented decay function impacting $`I(t)_{Bias} = I(0)_{Bias}e^{-\tau*t}`$
+        + Biased nodes (Bias can change based on Environmental signals)
+        + implented decay function impacting $`I(t)_{Bias} = I(0)_{Bias}e^{-\tau*t}`$
     + <span style="color:red"> Diffusive Nodes </span> (Continous Node with diffusion upon activation )
-            + Biased nodes (Bias can change based on Environmental signals)
-            + Implented decay function given by $`I(t)_{Bias} = I(0)_{Bias}e^{-\tau*t}`$
-            + Diffusion to $n$ neighbors upon activation
+        + Biased nodes (Bias can change based on Environmental signals)
+        + Implented decay function given by $`I(t)_{Bias} = I(0)_{Bias}e^{-\tau*t}`$
+        + Diffusion to $n$ neighbors upon activation
     + <span style="color:red"> Stochastic Nodes </span> (Stochastic Noise gates)
-            + Input gates that displaces gate bias stoachstically
+        + Input gates that displaces gate bias stoachstically
 
 ## Use cases 
 + Lightweight Testing Framework for Mechanical Modelling
